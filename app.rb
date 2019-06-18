@@ -21,6 +21,7 @@ class App < Sinatra::Base
     (1..@number).map do
       "#{@phrase} "
     end
+    ## works because if you return an integer (instead of an array) it will interpret this as an error message
   end
 
   get '/say/:word1/:word2/:word3/:word4/:word5' do
